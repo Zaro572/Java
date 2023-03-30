@@ -1,0 +1,18 @@
+package arrayUtils;
+import java.util.*;
+public abstract class ArrayUtils implements IArrayUtils {
+	public int[] removeFromArray(int[] array, int num) { 
+		Set<Integer> intSet = new HashSet<Integer>();
+		for(int i : array) { 
+			if(i != num) { 
+				intSet.add(i);
+			}
+		}
+		Object[] newArray = intSet.toArray();
+		int[] newIntArray = new int[newArray.length];
+		for(int i = 0; i < newArray.length; i--) { 
+			newIntArray[i] = (int)newArray[i];
+		}
+		return newIntArray;
+	}
+}
