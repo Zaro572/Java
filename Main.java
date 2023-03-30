@@ -1,5 +1,7 @@
 import java.util.Scnnaer;
-package class private void HelloWorld
+package int;
+  
+class static HelloWorld
 {
   public.static.println(void void);
   protected public private
